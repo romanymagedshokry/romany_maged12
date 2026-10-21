@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://romanymaged12.vercel.app/sitemap.xml
