@@ -187,7 +187,7 @@ function initAnimations() {
     // Initialize Typed.js for Hero Title Typing Animation
     if (document.getElementById('typed-roles') && typeof Typed !== 'undefined') {
         new Typed('#typed-roles', {
-            strings: ['<i class="fas fa-pen-nib"></i> Logo Branding Designer', '<i class="fas fa-shield-halved"></i> Cybersecurity Student', '<i class="fas fa-code"></i> Frontend Developer'],
+            strings: ['<i class="fas fa-brain"></i> AI Model Engineering', '<i class="fas fa-shield-halved"></i> Cybersecurity', '<i class="fas fa-code"></i> Software Development', '<i class="fas fa-chart-line"></i> Data Analytics', '<i class="fas fa-pen-nib"></i> UI/UX &amp; Brand Design'],
             typeSpeed: 50, backSpeed: 30, backDelay: 2000, loop: true, contentType: 'html'
         });
     }
