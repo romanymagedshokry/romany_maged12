@@ -2332,3 +2332,57 @@ footer {
     height: 46px;
   }
 }
+
+
+
+/* ===== MOBILE HERO PORTRAIT POSITION + PORTFOLIO TITLE FIX ===== */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 96px !important;
+    padding-bottom: 28px;
+    overflow: hidden;
+  }
+
+  .hero-wrapper {
+    gap: 28px !important;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-width: 0;
+    margin-top: 18px !important;
+    flex: 0 0 auto;
+  }
+
+  .profile-glow-ring {
+    width: min(78vw, 360px) !important;
+    height: min(78vw, 360px) !important;
+    flex-shrink: 0;
+    margin-top: 8px;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50%;
+  }
+
+  .hero-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero-title {
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+}
+
+@media (max-width: 380px) {
+  .profile-glow-ring {
+    width: min(74vw, 300px) !important;
+    height: min(74vw, 300px) !important;
+  }
+}
