@@ -2213,3 +2213,122 @@ footer {
     .hero-section::after, .profile-glow-ring::after, .status-dot { animation: none !important; }
     .skill-bar-item .progress, .glass-card, .skill-category { transition: none !important; }
 }
+
+
+
+/* ===== MOBILE CONTACT LAYOUT FIX (2026-10) ===== */
+@media (max-width: 768px) {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip !important;
+  }
+
+  .contact-section,
+  .contact-section .container,
+  .contact-wrapper,
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .contact-section .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 24px;
+  }
+
+  .contact-info,
+  .contact-form {
+    min-width: 0;
+    padding: clamp(18px, 5vw, 28px) !important;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-info h3 {
+    font-size: clamp(1.45rem, 5.5vw, 1.9rem);
+    line-height: 1.25;
+    overflow-wrap: anywhere;
+  }
+
+  .contact-info p {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    margin-bottom: 28px;
+  }
+
+  .method-item,
+  .method-item span,
+  .contact-info a {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .social-links-lg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 100%;
+  }
+
+  .social-lg {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .contact-form .form-group,
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select,
+  .contact-form button,
+  .contact-form .form-actions {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    box-sizing: border-box;
+  }
+
+  .contact-form button {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (max-width: 380px) {
+  .contact-section .container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 16px !important;
+  }
+
+  .social-links-lg {
+    gap: 9px;
+  }
+
+  .social-lg {
+    flex-basis: 46px;
+    width: 46px;
+    height: 46px;
+  }
+}
